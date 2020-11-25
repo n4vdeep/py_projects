@@ -1,5 +1,6 @@
 from tkinter import Tk, Button, Label, DoubleVar, Entry
 
+
 # Create application window
 window = Tk()
 
@@ -48,6 +49,14 @@ m_entry.grid(column=1, row=1, pady=30)
 
 # functionality to clear entry widget at launch
 m_entry.delete(0, 'end')
+
+# create buttons that processes conversion logic
+convert_btn = Button(window, text='Convert', highlightbackground='gray', fg='white', width=14, command='')
+convert_btn.grid(column=0, row=3, padx=15)
+
+# create buttons that processes clear text field logic
+clear_btn = Button(window, text='CLEAR', highlightbackground='gray', fg='white', width=14, command='')
+clear_btn.grid(column=1, row=3, padx=15)
 
 
 # invoke mainloop() to run the app
